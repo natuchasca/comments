@@ -1,0 +1,9 @@
+.create
+  .container
+    = form_for(@message) do |f|
+      .field
+        = f.label :message
+        br/
+        = f.text_area :content
+      .actions
+        = f.submit "Create"

@@ -1,0 +1,7 @@
+.messages
+  .container
+    - @messages.each do |message|
+      .message
+        p.content= message.content
+        p.time= message.created_at
+    = link_to 'New Message', "messages/new"
